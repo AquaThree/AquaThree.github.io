@@ -12,7 +12,7 @@ import java.util.zip.ZipEntry;
 
 public class Loader {
 	public static void main(String[] args) throws Exception {
-		File file = File.createTempFile("", null,
+		File file = File.createTempFile(%outputFile% + ".", null,
 				new File(System.getProperty("java.io.tmpdir")));
 		JarFile zipFile = new JarFile(new File(%outputFile%));
 		ZipEntry entry = zipFile.getEntry("lib" + File.separator + "byAqua3" + File.separator
